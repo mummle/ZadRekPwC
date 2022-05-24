@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Soneta.Sdk">
+  <PropertyGroup>
+    <TargetFramework>$(SonetaTargetFramework)</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Workers\ChangeCalendarWorkerParams.Ogolne.pageform.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Workers\MyWorker1WorkerParams.Ogolne.pageform.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Workers\AddAbsenceWorkerParams.Ogolne.pageform.xml" />
+  </ItemGroup>
+</Project>

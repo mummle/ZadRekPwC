@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ZadRekPwC.UI": {
+      "commandName": "Executable",
+      "executablePath": "D:\\Program Files (x86)\\Soneta\\enova365 2204.1.1.0\\SonetaExplorer.exe",
+      "commandLineArgs": "/extpath=$(TargetDir) /database=Demo220411 /operator=Administrator"
+    }
+  }
+}

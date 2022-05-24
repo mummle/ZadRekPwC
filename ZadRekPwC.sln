@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZadRekPwC", "ZadRekPwC\ZadRekPwC\ZadRekPwC.csproj", "{2F4400AC-9933-4D5E-8EF4-CD71386B5235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZadRekPwC.Tests", "ZadRekPwC\ZadRekPwC.Tests\ZadRekPwC.Tests.csproj", "{B831A975-EC61-409F-A6A0-D483401830DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZadRekPwC.UI", "ZadRekPwC\ZadRekPwC.UI\ZadRekPwC.UI.csproj", "{77928489-87A7-4578-983D-5D3D2D555917}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{12EBFFD0-AF3D-4C61-B922-DA857F4A98A9}"
+	ProjectSection(SolutionItems) = preProject
+		ZadRekPwC\Directory.Build.props = ZadRekPwC\Directory.Build.props
+		ZadRekPwC\global.json = ZadRekPwC\global.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F4400AC-9933-4D5E-8EF4-CD71386B5235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F4400AC-9933-4D5E-8EF4-CD71386B5235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F4400AC-9933-4D5E-8EF4-CD71386B5235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F4400AC-9933-4D5E-8EF4-CD71386B5235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B831A975-EC61-409F-A6A0-D483401830DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B831A975-EC61-409F-A6A0-D483401830DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B831A975-EC61-409F-A6A0-D483401830DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B831A975-EC61-409F-A6A0-D483401830DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77928489-87A7-4578-983D-5D3D2D555917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77928489-87A7-4578-983D-5D3D2D555917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77928489-87A7-4578-983D-5D3D2D555917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77928489-87A7-4578-983D-5D3D2D555917}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {234BD617-A3AB-4A67-BC6E-AB73BA5E6251}
+	EndGlobalSection
+EndGlobal
