@@ -50,10 +50,28 @@ namespace ZadRekPwC.UI.Workers
                     }
                     else
                     {
-                        PracHistoria pracHistoria2 = p.Historia.Update(this.Pars.Data);
-                        p.Module.PracHistorie.AddRow((Row)pracHistoria2);
-                        ((IUpdateReason)pracHistoria2).UpdateReason = this.Pars.PowodAktualizacji;
-                        pracHistoria2.Etat.Kalendarz = this.Pars.Kalendarz;
+                        if (this.Pars.TylkoOstatni)
+                        {
+                            PracHistoria pracHistoria2 = p.Historia.Update(this.Pars.Data);
+                            p.Module.PracHistorie.AddRow((Row)pracHistoria2);
+                            ((IUpdateReason)pracHistoria2).UpdateReason = this.Pars.PowodAktualizacji;
+                            pracHistoria2.Features["Zmieniono Kalendarz"] = true;
+                            pracHistoria2.Etat.Kalendarz = this.Pars.Kalendarz;
+                        }
+                        else
+                        {
+                            var pracHistoria3 = p.Historia;
+                            foreach (PracHistoria el in pracHistoria3)
+                            {
+                                if (el.Aktualnosc.From <= this.Pars.Data)
+                                {
+                                    //p.Module.PracHistorie.AddRow((Row)el);
+                                    el.Features["Zmieniono Kalendarz"] = true;
+                                    el.Etat.Kalendarz = this.Pars.Kalendarz;
+                                }
+                                else continue;
+                            }
+                        }
                     }
                     log2.WriteLine((object)new Percent((long)++num, (long)length));
                 }
